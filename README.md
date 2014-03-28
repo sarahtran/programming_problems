@@ -18,4 +18,15 @@ The picture is converted into an energy matrix using the dual gradient energy fu
 <p>Compilation: javac SeamCarver.java</p>
 <p>Execution: java SeamCarver input.png columnsToRemove rowsToRemove</p>
 
+<h2>Keyword Context</h2>
 
+<p>
+Keyword context search provides the context around all the designated keywords in a large text corpus. This method is similar to the find methods implemented in word processor programs.
+</p>
+
+<h4>Method and Algorithms</h4>
+The text corpus is first sanitized and then constructed into a sorted suffix array. A keyword occurrence is then found using binary search and scanned backwards and forwards for all occurrences of the keyword. An optimization made was to limit the suffix length since the assumption is that keywords would not exceed a certain length.
+
+<h4>Complilation and Execution</h4>
+<p>Compilation: javac KeywordContext.java</p>
+<p>Execution: java KeywordContext corpus.txt keyword1 keyword2 ...</p>
